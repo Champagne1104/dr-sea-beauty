@@ -112,7 +112,11 @@
       const next = new URLSearchParams();
       if (search.value.trim()) next.set("q", search.value.trim());
       if (category.value !== "all") next.set("category", category.value);
-      history.replaceState(null, "", `${location.pathname}${next.toString() ? `?${next}` : ""}`);
+      try {
+        history.replaceState(null, "", `${location.pathname}${next.toString() ? `?${next}` : ""}`);
+      } catch (_error) {
+        // Sandboxed preview hosts can block history updates; filtering still works.
+      }
     }
 
     search.addEventListener("input", update);
