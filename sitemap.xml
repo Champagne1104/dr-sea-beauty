@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://drseabeauty.shop/</loc></url><url><loc>https://drseabeauty.shop/shop.html</loc></url><url><loc>https://drseabeauty.shop/about.html</loc></url><url><loc>https://drseabeauty.shop/shipping.html</loc></url><url><loc>https://drseabeauty.shop/returns.html</loc></url><url><loc>https://drseabeauty.shop/privacy.html</loc></url><url><loc>https://drseabeauty.shop/terms.html</loc></url><url><loc>https://drseabeauty.shop/catalog-status.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://drseabeauty.shop/</loc></url>
+  <url><loc>https://drseabeauty.shop/shop.html</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1000</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1001</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1002</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1003</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1004</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1005</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1006</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1007</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1101</loc></url>
+  <url><loc>https://drseabeauty.shop/product.html?sku=DRSEA-1092</loc></url>
+  <url><loc>https://drseabeauty.shop/about.html</loc></url>
+  <url><loc>https://drseabeauty.shop/catalog-status.html</loc></url>
+  <url><loc>https://drseabeauty.shop/shipping.html</loc></url>
+  <url><loc>https://drseabeauty.shop/returns.html</loc></url>
+  <url><loc>https://drseabeauty.shop/privacy.html</loc></url>
+  <url><loc>https://drseabeauty.shop/terms.html</loc></url>
+</urlset>
