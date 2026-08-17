@@ -24,6 +24,15 @@
 
   let cart = readCart();
 
+  function queryValue(name) {
+    const direct = new URLSearchParams(location.search).get(name);
+    if (direct) return direct;
+    const pattern = new RegExp(`[?&]${name}=([^&#]*)`, "g");
+    const matches = [...location.href.matchAll(pattern)];
+    if (!matches.length) return "";
+    return decodeURIComponent(matches[matches.length - 1][1].replace(/\+/g, " "));
+  }
+
   function saveCart() {
     localStorage.setItem(storageKey, JSON.stringify(cart));
     renderCart();
@@ -81,10 +90,8 @@
     const category = document.querySelector("#categoryFilter");
     const sort = document.querySelector("#sortProducts");
     const count = document.querySelector("#resultCount");
-    const params = new URLSearchParams(window.location.search);
-
-    if (params.get("q")) search.value = params.get("q");
-    if (params.get("category")) category.value = params.get("category");
+    if (queryValue("q")) search.value = queryValue("q");
+    if (queryValue("category")) category.value = queryValue("category");
 
     function update() {
       const query = search.value.trim().toLowerCase();
@@ -123,7 +130,7 @@
   function renderProductPage() {
     const target = document.querySelector("[data-product-page]");
     if (!target) return;
-    const product = catalog.find(new URLSearchParams(location.search).get("sku"));
+    const product = catalog.find(queryValue("sku"));
     if (!product) {
       target.innerHTML = `<div class="empty"><h1>Product not found</h1><p>This item may not be published yet.</p><a class="btn" href="shop.html">Browse verified-price products</a></div>`;
       return;

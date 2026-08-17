@@ -63,7 +63,7 @@ p { margin: 0 0 1rem; }
 .hero-orbit { position: absolute; inset: 5%; border: 1px solid rgba(8, 123, 131, .17); border-radius: 50%; }
 .hero-orbit:nth-child(2) { inset: 16%; }
 .hero-product { position: relative; width: min(390px, 88%); padding: 46px 36px; border: 1px solid rgba(255,255,255,.75); border-radius: 48% 48% 28px 28px; background: rgba(255,255,255,.78); box-shadow: var(--shadow); backdrop-filter: blur(12px); text-align: center; }
-.hero-product .brand-mark { width: 76px; height: 76px; margin: 0 auto 22px; font-size: 20px; }
+.hero-product .brand-mark { width: 76px; height: 76px; margin: 0 auto 22px; color: #fff; font-size: 20px; }
 .hero-product strong { display: block; font-family: Georgia, serif; font-size: 32px; color: var(--deep); }
 .hero-product span { color: var(--sea); font-weight: 750; }
 .proof-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 34px; }
